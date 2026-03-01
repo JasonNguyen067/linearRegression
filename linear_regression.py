@@ -51,10 +51,10 @@ class LinearRegression:
         m = len(y)
 
         # TODO 1: Compute predictions using X and self.theta
-        predictions = None  # shape (m,)
+        predictions = X @ self.theta  # shape (m,)
 
         # TODO 2: Compute the error (predictions - y)
-        errors = None  # shape (m,)
+        errors = predictions - y  # shape (m,)
 
         # TODO 3: Compute and return the cost J = (1/2m) * sum(errors^2)
         cost = None
