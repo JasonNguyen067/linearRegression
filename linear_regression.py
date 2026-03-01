@@ -57,7 +57,7 @@ class LinearRegression:
         errors = predictions - y  # shape (m,)
 
         # TODO 3: Compute and return the cost J = (1/2m) * sum(errors^2)
-        cost = None
+        cost = (1 / (2 * m)) * sum(errors * errors)
 
         return cost
 
