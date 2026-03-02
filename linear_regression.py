@@ -135,7 +135,7 @@ class LinearRegression:
         m = len(y)
 
         # TODO 4: Compute predictions using X and self.theta
-        predictions = None  # shape (m,)
+        predictions = X @ self.theta  # shape (m,)
 
         # TODO 5: Compute the error (predictions - y)
         errors = None
