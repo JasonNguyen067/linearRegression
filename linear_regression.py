@@ -138,7 +138,7 @@ class LinearRegression:
         predictions = X @ self.theta  # shape (m,)
 
         # TODO 5: Compute the error (predictions - y)
-        errors = None
+        errors = predictions - y
 
         # TODO 6: Compute and return the gradient: (1/m) * X.T @ errors
         gradients = None  # shape (n,)
