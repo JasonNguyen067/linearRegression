@@ -180,7 +180,7 @@ class LinearRegression:
 
             # TODO 9: Update self.theta using the gradient descent rule
             #         theta = theta - learning_rate * gradients
-            
+            self.theta = self.theta - self.learning_rate * gradients
 
             # TODO 10: Compute current cost and append to self.cost_history
             cost = None
