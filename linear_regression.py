@@ -141,7 +141,7 @@ class LinearRegression:
         errors = predictions - y
 
         # TODO 6: Compute and return the gradient: (1/m) * X.T @ errors
-        gradients = None  # shape (n,)
+        gradients = (1 / m) * X.T @ errors  # shape (n,)
 
         return gradients
 
@@ -171,7 +171,7 @@ class LinearRegression:
         n_features = X.shape[1]
 
         # TODO 7: Initialize self.theta as a zero vector of shape (n_features,)
-        self.theta = None
+        self.theta = np.zeros(n_features)
 
         for i in range(self.n_iterations):
 
