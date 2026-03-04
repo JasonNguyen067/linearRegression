@@ -183,7 +183,7 @@ class LinearRegression:
             self.theta = self.theta - self.learning_rate * gradients
 
             # TODO 10: Compute current cost and append to self.cost_history
-            cost = None
+            cost = self.compute_cost(X, y)
             self.cost_history.append(cost)
 
         return self
