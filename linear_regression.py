@@ -176,11 +176,11 @@ class LinearRegression:
         for i in range(self.n_iterations):
 
             # TODO 8: Compute gradients using self.compute_gradients(X, y)
-            gradients = None
+            gradients = self.compute_gradients(X, y)
 
             # TODO 9: Update self.theta using the gradient descent rule
             #         theta = theta - learning_rate * gradients
-            pass
+            
 
             # TODO 10: Compute current cost and append to self.cost_history
             cost = None
