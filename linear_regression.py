@@ -217,7 +217,8 @@ class LinearRegression:
             np.ndarray: Predicted price for every house, shape (m,).
         """
         # TODO 11: Return predictions as X @ self.theta
-        pass
+        predictions = X @ self.theta
+        return predictions
 
     # -------------------------------------------------------------------------
     # Part 4 (Bonus): Normal Equation
