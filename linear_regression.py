@@ -103,7 +103,7 @@ class LinearRegression:
         errors = predictions - y  # shape (m,)
 
         # TODO 3: Compute and return the cost J = (1/2m) * sum(errors^2)
-        cost = (1 / (2 * m)) * sum(errors * errors)
+        cost = (1 / (2 * m)) * np.sum(errors * errors)
 
         return cost
 
