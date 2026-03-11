@@ -241,6 +241,6 @@ class LinearRegression:
         """
         # TODO 12 (Bonus): Implement the normal equation using np.linalg.inv
         #                  or np.linalg.pinv (more numerically stable)
-        pass
+        self.theta = np.linalg.pinv(X.T @ X) @ X.T @ y
 
         return self
