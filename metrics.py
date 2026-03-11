@@ -31,8 +31,9 @@ def mean_absolute_error(y_true, y_pred):
         float: MAE value.
     """
     # TODO 1: Compute and return the MAE
-    pass
-
+    m = len(y_true)
+    MAE = (1/m) * np.sum(np.abs(y_true - y_pred))
+    return MAE
 
 def mean_squared_error(y_true, y_pred):
     """
