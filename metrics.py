@@ -48,8 +48,10 @@ def mean_squared_error(y_true, y_pred):
     Returns:
         float: MSE value.
     """
+    m = len(y_true)
+
     # TODO 2: Compute and return the MSE
-    pass
+    MSE = (1/m) * np.sum((y_pred - y_true) ** 2)
 
 
 def root_mean_squared_error(y_true, y_pred):
