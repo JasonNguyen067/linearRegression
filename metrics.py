@@ -52,6 +52,7 @@ def mean_squared_error(y_true, y_pred):
 
     # TODO 2: Compute and return the MSE
     MSE = (1/m) * np.sum((y_pred - y_true) ** 2)
+    return MSE
 
 
 def root_mean_squared_error(y_true, y_pred):
@@ -68,7 +69,7 @@ def root_mean_squared_error(y_true, y_pred):
         float: RMSE value.
     """
     # TODO 3: Reuse mean_squared_error() and return its square root
-    pass
+    return np.sqrt(mean_squared_error(y_true, y_pred))
 
 
 # -------------------------------------------------------------------------
